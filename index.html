@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Parallel GTM for Code Gen Agents</title>
     <style>
         * {
@@ -332,19 +332,144 @@
             text-decoration: underline;
         }
 
+        /* Mobile Responsive Design */
         @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                max-width: 100%;
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 1.8rem;
+                line-height: 1.2;
+            }
+            
+            .header p {
+                font-size: 0.9rem;
+            }
+            
             .stats {
                 flex-direction: column;
                 align-items: center;
+                gap: 15px;
+            }
+            
+            .stat-card {
+                width: 100%;
+                max-width: 200px;
             }
             
             .table-container {
-                padding: 15px;
+                padding: 10px;
+                overflow-x: auto;
+            }
+            
+            table {
+                min-width: 800px;
+                font-size: 0.75rem;
             }
             
             th, td {
-                padding: 8px 6px;
+                padding: 6px 4px;
+                font-size: 0.7rem;
+                word-wrap: break-word;
+                max-width: 120px;
+            }
+            
+            .company-name {
                 font-size: 0.8rem;
+            }
+            
+            .website-link {
+                font-size: 0.7rem;
+            }
+            
+            .ceo-name {
+                font-size: 0.8rem;
+            }
+            
+            .text-content {
+                font-size: 0.7rem;
+                line-height: 1.3;
+            }
+            
+            .section-header {
+                font-size: 0.7rem;
+            }
+            
+            .section-content {
+                font-size: 0.65rem;
+                line-height: 1.2;
+            }
+            
+            .section-read-more-btn {
+                font-size: 0.6rem;
+                padding: 3px 6px;
+            }
+            
+            .read-more-btn {
+                font-size: 0.65rem;
+                padding: 4px 8px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .header p {
+                font-size: 0.8rem;
+            }
+            
+            .table-header h2 {
+                font-size: 1.2rem;
+            }
+            
+            .table-header p {
+                font-size: 0.8rem;
+            }
+            
+            table {
+                min-width: 600px;
+                font-size: 0.65rem;
+            }
+            
+            th, td {
+                padding: 4px 2px;
+                font-size: 0.6rem;
+                max-width: 100px;
+            }
+            
+            .text-content {
+                font-size: 0.6rem;
+            }
+            
+            .section-content {
+                font-size: 0.55rem;
+            }
+        }
+        
+        /* Add viewport meta tag for proper mobile scaling */
+        @media (max-width: 768px) {
+            .table-container {
+                position: relative;
+            }
+            
+            .table-container::after {
+                content: "← Scroll horizontally to see more →";
+                position: absolute;
+                bottom: -25px;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #ff6b35;
+                font-size: 0.7rem;
+                font-weight: 500;
+                white-space: nowrap;
             }
         }
     </style>
@@ -353,7 +478,7 @@
     <div class="container">
         <div class="header">
             <h1>Parallel GTM for Code Gen Agents</h1>
-            <p>Building ammo for targeted oubtound. Gathered using Parallel APIs</p>
+            <p>Building ammo for targeted outbound. Gathered using Parallel APIs - Updated</p>
         </div>
 
         <div class="stats">
@@ -373,7 +498,7 @@
 
         <div class="table-container">
             <div class="table-header">
-                <h2>Analysis of ICP using the Parallel Task API</h2>
+                <h2>Analysis of ICP using the Parallel APIs</h2>
                 <p>Comprehensive ICP analysis, market insights, and Parallel API use cases</p>
             </div>
 
