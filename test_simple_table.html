@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Test Table</title>
+    <style>
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .market { background-color: #e6f3ff; }
+        .parallel { background-color: #fff2e6; }
+    </style>
+</head>
+<body>
+    <h1>Simple Test Table - Data Separation Check</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Market Research</th>
+                <th>Parallel Use Case</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Greptile</strong></td>
+                <td class="market">
+                    <strong>MARKET RESEARCH:</strong><br>
+                    Greptile, founded in 2021, operates primarily in the Business/Productivity Software sector, specializing in AI-powered code review and understanding large codebases. Its market also spans Software Development Applications, Media and Information Services (B2B), Big Data, SaaS, and Artificial Intelligence & Machine Learning. As of 2025, Greptile has 8 employees. The company has raised $5.4 million in funding, including an $800K seed round in June 2023 and a $4.1 million seed round in June 2024, and is currently in talks for a Series A round at a $180 million valuation, with Benchmark potentially leading a $30 million round.
+                </td>
+                <td class="parallel">
+                    <strong>PARALLEL USE CASE:</strong><br>
+                    Greptile, an AI Code Reviewer, can significantly enhance its capabilities by integrating with Parallel's web research APIs, offering more intelligent and context-aware code reviews. Here are specific ways: 1. Enhanced Code Vulnerability Detection: Greptile can use Parallel's Search API to dynamically search for the latest security vulnerabilities (CVEs), best practices, and common anti-patterns related to specific programming languages, frameworks, or libraries detected in the codebase.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <p><strong>Note:</strong> If you can see clear separation between the blue (Market Research) and orange (Parallel Use Case) columns, then the data is correctly separated. The issue in the main table might be a display/styling problem.</p>
+</body>
+</html>
+
+
